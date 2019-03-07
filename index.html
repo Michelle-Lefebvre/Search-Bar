@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>JS Search Careers</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
+    <!--    javascript file-->
+    <script src="careersearch.js"></script>
+    <!-- Custom styles for this template -->
+   
+</head>
+<style type="text/css">
+/*
+.jobs {
+    align-content: space-around;
+    max-width: 80%;
+}
+.btn-find-location-center {
+    left: 45%;
+    position: absolute;
+    top: 80%;
+}
+form {
+    margin-bottom: 70px;
+}
+
+// buttons centering
+.btn-find-location {
+    margin: auto;
+}
+// spacing between buttons on franchise finder form
+.btn-space-btw{
+    margin: 5px;
+}
+
+.franchise-finder {
+    margin: auto;
+}
+// spacing in module 
+.positions {
+    width: 80%;
+    margin: auto;
+}    
+*/
+    
+button, input, select, textarea {
+    font: inherit;
+    margin: 10px;
+}
+</style>
+
+<body>
+
+    <section id="section-apply" class="section-did-you-know-that justify-content-center">
+        <div class="container">
+                <div class="col- col-lg-8 mx-auto">
+                    <h2 class="h2 text-center text-highlight purple franchise-finder">See What Jobs are Available<br>in your neighbourhood!</h2>
+                    <div class="text-center text-highlight purple franchise-finder">
+                        <fieldset style="width: 600px;">
+                            <form>
+                                <table>
+                                    <tr>
+                                        <select name="states" id="states" onchange="setStates(event);" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                            <option value="">State</option>
+                                        </select>
+                                    </tr>
+                                    <tr>
+                                        <select name="state" id="city" onchange="setCities(event);" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                            <option value="">City</option>
+                                        </select>
+                                    </tr>
+                                    <tr>
+                                        <select name="city" id="franchise" class=" btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                            <option value="">Franchise</option>
+                                        </select>
+                                    </tr>
+                                    <tr>
+                                        <Button value="" onclick="openInNewTab(event)" type="button" class="btn-find-location btn-space-btw btn btn-info">Go</Button>
+                                    </tr>
+                                </table>
+                            </form>
+                        </fieldset>
+                    </div>
+                </div>
+        </div>
+    </section>
+  
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+        (function() {
+            'use strict'
+
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                    )
+                )
+                document.head.appendChild(msViewportStyle)
+            }
+
+        }())
+    </script>
+
+</body>
+</html>
